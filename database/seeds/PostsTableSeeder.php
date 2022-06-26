@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Faker\Generator as Faker;
 use App\Post;
 
 class PostsTableSeeder extends Seeder
@@ -20,7 +20,6 @@ class PostsTableSeeder extends Seeder
             $newPost->slug = Str::of($newPost->title)->slug('-');
             $newPost->content = $faker->text();
             $newPost->published = rand(0,1);
-
             $newPost->save();
         }
     }

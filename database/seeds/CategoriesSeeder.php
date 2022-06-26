@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
 use Illuminate\Support\Str;
+use Faker\Generator as Faker;
 use App\Category;
 
 class CategoriesSeeder extends Seeder
@@ -14,12 +14,13 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        $categorieslist = ['Primi piatti', 'Secondi piatto','Contorni', 'Antioasti','Dolci'];
-        foreach ($categorieslist as $category) {
-           $newCategory = new Category();
-           $newCategory->name = $category;
-           $newCategory->slug = Str::of($newCategory->name)->slug('-');
-           $newCategory->save();
+        $categorieslist = ['Primi piatti','Secondi piatti', 'Contorni','Antipasti','Dolci'];
+        forEach($categorieslist as $category){
+            $newCategory = new Category();
+            $newCategory->name = $category;
+            $newCategory->slug = Str::of( $newCategory->name)->slug('-');
+
+            $newCategory->save();
         }
     }
 }

@@ -1919,7 +1919,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'AppMain',
   data: function data() {
     return {
-      'titolo': 'Work in progress',
+      'titolo': 'Work In Progress',
       'sottotitolo': 'Sito in Costruzione'
     };
   }
@@ -37567,7 +37567,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("app-main")], 1)
+  return _c("main", { staticClass: "container mt-3" }, [_c("app-main")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -49941,7 +49941,8 @@ var app = new Vue({
   el: '#root',
   render: function render(h) {
     return h(_views_App__WEBPACK_IMPORTED_MODULE_0__["default"]);
-  }
+  } // renderizziamo App all'avvio di Vue
+
 });
 
 /***/ }),
@@ -50022,7 +50023,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\abdel\OneDrive\Desktop\Boolean\laravel-auth\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! /opt/lampp/htdocs/classe59/laravel-auth/resources/js/front.js */"./resources/js/front.js");
 
 
 /***/ })
