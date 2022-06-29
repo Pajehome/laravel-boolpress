@@ -2155,7 +2155,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".router-link-active {\n  color: rgb(109, 73, 192) !important;\n}", ""]);
+exports.push([module.i, ".router-link-exact-active {\n  color: rgb(109, 73, 192) !important;\n}", ""]);
 
 // exports
 

@@ -49,7 +49,7 @@ export default {
 }
 </script>
 <style lang="scss">
- .router-link-active{
+ .router-link-exact-active{
     color:rgb(109, 73, 192) !important;
  }
 </style>
